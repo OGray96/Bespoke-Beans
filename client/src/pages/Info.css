@@ -1,3 +1,27 @@
+.image-wrapper-top {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.image-wrapper-top img {
+  width: 1000px;
+}
+
+
 .image-wrapper-bottom img {
   width: 1000px;
 }
+
+.image-wrapper-bottom {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5rem;
+}
+
