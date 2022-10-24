@@ -1,6 +1,6 @@
 import React from "react";
 import "./Homepage.css";
-import frontpageimage1 from "../images/front-page-image.jpg";
+import frontpageimage1 from "../images/mockup-of-multiple-paper-cups-placed-circularly-on-a-surface-m29048-r-el2 (1)-PhotoRoom (1).png";
 
 import { motion } from "framer-motion";
 
