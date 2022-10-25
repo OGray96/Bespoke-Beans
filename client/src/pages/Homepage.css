@@ -6,6 +6,7 @@
   height: 100vh;
   position: relative;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
 
 .page-container {
 overflow: hidden;
@@ -61,6 +62,10 @@ body {
 h1 {
   color: #f5f5f5;
   font-size: 150px;
+  margin: 0;
+  letter-spacing: -6px;
+  line-height: 90%;
+  font-family: 'Playfair Display SC', serif;
 
 }
 
