@@ -7,17 +7,8 @@ const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 const resolvers = {
     Query: {
 
-      products: async (parent, { category, name }) => {
-        const params = {};
-  
-  
-        if (name) {
-          params.name = {
-            $regex: name
-          };
-        }
-  
-        return await Product.find(params)
+      products: async (parent, { category, name }) => {  
+        return await Product.findAll()
       },
       product: async (parent, { _id }) => {
         return await Product.findById(_id);
