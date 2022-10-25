@@ -35,6 +35,7 @@ type Auth {
 
 type Query {
     product(_id: ID!): Product
+    products: [Product]
     user: User
     order(_id: ID!): Order
     checkout(products: [ID]!): Checkout
