@@ -1,0 +1,124 @@
+.products {
+  width: 100%;
+}
+
+.products-container {
+  padding: 3rem;
+}
+
+.products-header,
+.products-header-content,
+.products-main,
+.products-items,
+.products-item-image {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-header-content h1 {
+  color: #fafafa;
+  font-family: serif;
+  font-size: 2rem;
+  max-width: 60rem;
+  text-align: center;
+}
+
+.products-header,
+.products-main {
+  padding: 3rem;
+}
+
+.products-items {
+  max-width: 80rem;
+}
+
+.products-items,
+.products-item {
+  width: 100%;
+}
+
+.products-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  align-content: stretch;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 1rem;
+}
+
+.products-item-content {
+  flex: 1 1 50%;
+}
+
+.products-item-content-container {
+  padding: 3rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  height: 100%;
+}
+
+.products-item-content-container > div {
+  margin-bottom: 1rem;
+}
+
+.products-item-title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.products-item-description p {
+  font-weight: 300;
+  margin: 0;
+}
+
+.products-item-price span {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.products-item-price span:before {
+  content: '$';
+}
+
+.products-item-cart-btn button {
+  appearance: none;
+  background-color: #1f5d86;
+  border: 0.15rem solid #1f5d86;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.75rem 1rem;
+}
+
+.products-item-cart-btn button:hover {
+  background-color: #fafafa;
+  border-color: #1f5d86;
+  color: #1f5d86;
+}
+
+.products-item-image {
+  flex: 1 1 50%;
+  width: 100%;
+}
+
+.products-item.light .products-item-image,
+.products-item.dark .products-item-content {
+  color: #fafafa;
+  background-color: #000000;
+}
+
+.products-item.dark .products-item-image,
+.products-item.light .products-item-content {
+  color: #242424;
+  background-color: #c4adad;
+}
