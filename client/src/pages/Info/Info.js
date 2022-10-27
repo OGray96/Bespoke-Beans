@@ -1,8 +1,8 @@
 import React from "react";
 import "./Info.css";
 
-import image1 from "../images/info-page-image.jpg";
-import image2 from "../images/map-image.png";
+import image1 from "../../images/info-page-image.jpg";
+import image2 from "../../images/map-image.png";
 
 export default function Info() {
   return (

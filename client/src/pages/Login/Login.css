@@ -1,0 +1,91 @@
+.login {
+  background-color: #f5f5f5;
+  padding: 3rem 0;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.login-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-main,
+.login-register {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 50%;
+}
+
+.login-main-wrapper > div {
+  margin-bottom: 1rem;
+}
+
+.login-main-title h1 {
+  font-size: 1.75rem;
+  color: #727890;
+  font-weight: bold;
+  margin: 0;
+}
+
+.login-main-description p {
+  font-size: 0.75rem;
+  color: #2e4756;
+  font-weight: bold;
+  margin: 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-register-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-register-content > div {
+  margin-bottom: 0.75rem;
+}
+
+.login-register-content-image img {
+  height: 12rem;
+}
+
+.login-register-content-title h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #2e4756;
+}
+
+.login-register-content-description p {
+  font-size: 0.75rem;
+  margin: 0;
+  color: #727890;
+}
+

@@ -1,23 +1,22 @@
-import React from "react";
-import "./Homepage.css";
-import frontpageimage1 from "../images/mockup-of-multiple-paper-cups-placed-circularly-on-a-surface-m29048-r-el2 (1)-PhotoRoom (1).png";
+import React from 'react';
+import { motion } from 'framer-motion';
 
-import { motion } from "framer-motion";
+import './Homepage.css';
+import mainImage from '../../images/mockup-of-multiple-paper-cups-placed-circularly-on-a-surface-m29048-r-el2 (1)-PhotoRoom (1).png';
 
-export default function Home() {
+export default function Homepage() {
   return (
-    <div className="page-container">
-      <div className="box">
-        <div className="left">
-          <div className="content-wrapper">
-            <div className="page-title">
+    <div className='page'>
+      <div className='page-container'>
+        <div className='page-left'>
+          <div className='page-content'>
+            <div className='page-content-title'>
               <h1>Bespoke Beans</h1>
             </div>
 
-            <div className="about-us">
-              <div className="about-us-wwd">
-                <p>
-                  Bespoke Beans is a small coffee shop in the heart of
+            <div className='page-content-description'>
+              <p>
+              Bespoke Beans is a small coffee shop in the heart of
                   Melbourne, serving only the finest, most expensive coffees in
                   town. But don't let that fool you—we know our stuff! We're
                   obsessed with finding the perfect bean and putting it in your
@@ -35,23 +34,24 @@ export default function Home() {
                   hot joe at Bespoke Beans since 2022. His favourite part about
                   working here? Learning about different blends from all over
                   the world!
-                </p>
-              </div>
+              </p>
             </div>
           </div>
-          <div className="right">
-            <div className="image-wrapper">
-              <motion.img
-                src={frontpageimage1}
-                alt=""
-                animate={{ translateX: 0 }}
-                initial={{ translateX: 200 }}
-                whileHover={{
-                  scale: 1.05,
-                  transition: { duration: 0.15 },
-                }}
-              />
-            </div>
+        </div>
+        <div className='page-right'>
+          <div className='page-image-wrapper'>
+            <motion.img
+              src={mainImage}
+              alt='homepage-image'
+              initial={{ translateX: 200 }}
+              animate={{ translateX: 0 }}
+              whileHover={{
+                scale: 1.05,
+                transition: {
+                  duration: 0.15,
+                },
+              }}
+            />
           </div>
         </div>
       </div>
