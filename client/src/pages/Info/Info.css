@@ -1,18 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+
 .image-wrapper-top {
   display: flex;
-  align-content: center;
-  justify-content: center;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: row;
-  align-items: center;
-  margin-top: 5rem;
+  flex: 1 1 60%;
 }
 
 .image-wrapper-top img {
-  width: 1000px;
-  border-radius: .5rem;
-  box-shadow: -1px 0px 6px 0px #ab9ec9;
+  width: 545px;
+  margin-left: 3rem;
+  margin-top: 6rem;
 }
-
 
 .image-wrapper-bottom img {
   width: 1000px;
@@ -28,13 +29,8 @@
 }
 
 .info-text p {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 18px;
-  font-weight: 100;
-  text-shadow: 0px 0px 8px rgb(230 223 223);
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .find-us p {
@@ -45,7 +41,6 @@
   font-size: 18px;
   font-weight: 100;
   text-shadow: 0px 0px 8px rgb(230 223 223);
-
 }
 
 .img {

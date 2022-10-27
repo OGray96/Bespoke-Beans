@@ -1,4 +1,3 @@
-// import productImagePlaceholder from "../images/coffee1.png";
 import coffee1 from "../images/coffee1.png";
 import coffee2 from "../images/coffee2.png";
 import coffee3 from "../images/coffee3.png";
