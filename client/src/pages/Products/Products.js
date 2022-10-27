@@ -1,16 +1,16 @@
-import React, { useContext } from 'react';
-import { motion } from 'framer-motion';
+import React, { useContext } from "react";
+import { motion } from "framer-motion";
 
-import './Products.css';
-import { CartContext } from '../../context';
-import { products } from '../../data';
+import "./Products.css";
+import { CartContext } from "../../context";
+import { products } from "../../data";
 
 export default function Products(props) {
   const items = props.items || products;
   const cart = useContext(CartContext);
 
   return (
-    <div className='products'>
+    <div className="products">
       {/* TESTING */}
       {/* <div
         style={{
@@ -27,9 +27,9 @@ export default function Products(props) {
       </div> */}
       {/* TESTING */}
 
-      <div className='products-container'>
-        <div className='products-header'>
-          <div className='products-header-content'>
+      <div className="products-container">
+        <div className="products-header">
+          <div className="products-header-content">
             <h1>
               Please select from one of our Bespoke Coffee's today and we'll
               make sure it's ready for you to pick up before your boss knows you
@@ -38,25 +38,25 @@ export default function Products(props) {
           </div>
         </div>
 
-        <div className='products-main'>
-          <div className='products-items'>
+        <div className="products-main">
+          <div className="products-items">
             {items.map((item, index) => (
               <div
-                className={'products-item ' + (index % 2 ? 'dark' : 'light')}
+                className={"products-item " + (index % 2 ? "dark" : "light")}
                 key={index}
               >
-                <div className='products-item-content'>
-                  <div className='products-item-content-container'>
-                    <div className='products-item-title'>
+                <div className="products-item-content">
+                  <div className="products-item-content-container">
+                    <div className="products-item-title">
                       <h2>{item.name}</h2>
                     </div>
-                    <div className='products-item-description'>
+                    <div className="products-item-description">
                       <p>{item.description}</p>
                     </div>
-                    <div className='products-item-price'>
+                    <div className="products-item-price">
                       <span>{item.price}</span>
                     </div>
-                    <div className='products-item-cart-btn'>
+                    <div className="products-item-cart-btn">
                       <button onClick={() => cart.addOne(item.id)}>
                         Add to Cart
                       </button>
@@ -64,10 +64,10 @@ export default function Products(props) {
                   </div>
                 </div>
 
-                <div className='products-item-image'>
+                <div className="products-item-image">
                   <motion.img
-                    initial='offscreen'
-                    whileInView='onscreen'
+                    initial="offscreen"
+                    whileInView="onscreen"
                     viewport={{ once: true }}
                     variants={{
                       offscreen: {
@@ -77,14 +77,15 @@ export default function Products(props) {
                         y: 0,
                         rotate: -10,
                         transition: {
-                          type: 'spring',
+                          type: "spring",
                           bounce: 0.4,
                           duration: 0.8,
                         },
                       },
                     }}
                     src={item.image}
-                    alt='product-placeholder.png'
+                    alt="product-placeholder.png"
+                    width="576px"
                   />
                 </div>
               </div>
