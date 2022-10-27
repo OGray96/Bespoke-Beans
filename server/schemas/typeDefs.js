@@ -13,7 +13,7 @@ type User {
 type Product {
     _id: ID
     name: String
-    descritption: String
+    description: String
     price: Float
     stock: Int
 }

@@ -13,6 +13,7 @@ export const products = [
     description: "Austrian goat milk double-half-caf-half-decaf-soy milk cappuccino-extra hot-with a dash of Madagascar cinnamon-and half tablespoon of caramel-latte-frappa-mocha.",
     price: "13.50",
     image: coffee1,
+    stock:5
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export const products = [
     description: "pod, push button, long & done.",
     price: "9.50",
     image: coffee2,
+    stock:5
   },
   {
     id: 3,
@@ -27,6 +29,7 @@ export const products = [
     description: "coffee, water, milk.",
     price: "9.50",
     image: coffee3,
+    stock:5
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ export const products = [
     description: "One pump classic, nonfat, 6 enormous scoops of matcha, 195 degrees, and ABSOLUTELY NO FOAM.",
     price: "14.50",
     image: coffee4,
+    stock:5
   },
   {
     id: 5,
@@ -41,6 +45,7 @@ export const products = [
     description: "Extra Foam, 3 pumps of vanilla, 3 raw sugars coconut milk, heavy cream, Ristretto pod.",
     price: "12.50",
     image: coffee5,
+    stock:5
   },
   {
     id: 6,
@@ -48,5 +53,6 @@ export const products = [
     description: "Coffee.. Best damn Coffee",
     price: "7.50",
     image: coffee6,
+    stock:5
   },
 ];

@@ -1,13 +1,30 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { motion } from "framer-motion";
 
 import "./Products.css";
-import { CartContext } from "../../context";
 import { products } from "../../data";
 
+import {QUERY_ALL_PRODUCTS} from '../../utils/queries'
+import { useQuery } from "@apollo/client";
+
+import coffee1 from "../../images/coffee1.png";
+import coffee2 from "../../images/coffee2.png";
+import coffee3 from "../../images/coffee3.png";
+import coffee4 from "../../images/coffee4.png";
+import coffee5 from "../../images/coffee5.png";
+import coffee6 from "../../images/coffee6.png";
+
+const imgArray = [coffee1,coffee2,coffee3,coffee4,coffee5,coffee6]
+
 export default function Products(props) {
-  const items = props.items || products;
-  const cart = useContext(CartContext);
+
+  const { loading, data} = useQuery(QUERY_ALL_PRODUCTS);
+
+  const items = data?.products || []
+  // debugger;
+  //const items = props.items || products;
+  // const cart = useContext(CartContext);
+
 
   return (
     <div className="products">
@@ -57,7 +74,7 @@ export default function Products(props) {
                       <span>{item.price}</span>
                     </div>
                     <div className="products-item-cart-btn">
-                      <button onClick={() => cart.addOne(item.id)}>
+                      <button>
                         Add to Cart
                       </button>
                     </div>
@@ -83,7 +100,7 @@ export default function Products(props) {
                         },
                       },
                     }}
-                    src={item.image}
+                    src={imgArray[index]}
                     alt="product-placeholder.png"
                     width="576px"
                   />

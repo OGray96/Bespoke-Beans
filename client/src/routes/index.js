@@ -8,7 +8,7 @@ import {
   createHttpLink,
 } from '@apollo/client';
 
-import { CartProvider } from '../context';
+// import { CartProvider } from '../context';
 import { Footer, Navbar } from '../components';
 import { Homepage, Info, Login, Products, Register } from '../pages';
 
@@ -34,7 +34,6 @@ const client = new ApolloClient({
 export default function App() {
   return (
     <ApolloProvider client={client}>
-    <CartProvider>
       <BrowserRouter>
         <header>
           <Navbar />
@@ -52,7 +51,6 @@ export default function App() {
           <Footer />
         </footer>
       </BrowserRouter>
-    </CartProvider>
     </ApolloProvider>
   );
 }
