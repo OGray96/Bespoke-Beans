@@ -4,7 +4,7 @@ import { useMutation } from "@apollo/client";
 
 import { Auth, LOGIN } from "../../utils";
 import "./Login.css";
-import registerImagePlaceholder from "../../images/phone.webp";
+import signupPhoto from "../../images/phone.png";
 
 export default function Login() {
   // State to track password visibility
@@ -95,7 +95,7 @@ export default function Login() {
         <div className="login-register">
           <div className="login-register-content card">
             <div className="login-register-content-image">
-              <img src={registerImagePlaceholder} alt="" />
+              <img src={signupPhoto} alt="" />
             </div>
             <div className="login-register-content-title">
               <h2>Don't Have an Account?</h2>
