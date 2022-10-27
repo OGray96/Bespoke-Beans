@@ -42,6 +42,7 @@
   color: #727890;
   font-weight: bold;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 .login-main-description p {
@@ -49,6 +50,7 @@
   color: #2e4756;
   font-weight: bold;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 .login-form {
@@ -81,11 +83,13 @@
   font-size: 1.25rem;
   margin: 0;
   color: #2e4756;
+  font-family: 'Poppins', sans-serif;
 }
 
 .login-register-content-description p {
   font-size: 0.75rem;
   margin: 0;
   color: #727890;
+  font-family: 'Poppins', sans-serif;
 }
 

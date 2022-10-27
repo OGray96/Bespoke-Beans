@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Poppins:wght@300&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -31,6 +33,7 @@ form > .input-group {
   margin-bottom: 0.25rem;
   color: #242424;
   margin-left: 0.25rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .input-group input[type="text"],
@@ -41,6 +44,8 @@ form > .input-group {
   border-radius: 0.25rem;
   min-height: 2rem;
   width: 16rem;
+  font-family: 'Poppins', sans-serif;
+  
 }
 
 .input-group input[type="button"],
@@ -54,6 +59,7 @@ form > .input-group {
   padding: 0.5rem 0.75rem;
   cursor: pointer;
   margin-top: 2rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .input-group .input-wrapper {
