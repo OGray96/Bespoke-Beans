@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Poppins:wght@300&display=swap");
 
 body {
   margin: 0;
@@ -31,9 +31,9 @@ form > .input-group {
 .input-group label {
   font-size: 0.75rem;
   margin-bottom: 0.25rem;
-  color: #242424;
+  color: black;
   margin-left: 0.25rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .input-group input[type="text"],
@@ -44,8 +44,7 @@ form > .input-group {
   border-radius: 0.25rem;
   min-height: 2rem;
   width: 16rem;
-  font-family: 'Poppins', sans-serif;
-  
+  font-family: "Poppins", sans-serif;
 }
 
 .input-group input[type="button"],
@@ -59,7 +58,7 @@ form > .input-group {
   padding: 0.5rem 0.75rem;
   cursor: pointer;
   margin-top: 2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .input-group .input-wrapper {
@@ -86,31 +85,32 @@ form > .input-group {
   content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMzc2IDI2Mi4zNGMtODQuNzM0IDAtMTU5LjkyIDQyLjUtMjA2LjYgMTA4LjA0LTIuMzk0NSAzLjMxMjUtMi4zOTQ1IDcuNzg1MiAwIDExLjA5OCA0Ni42NzYgNjUuNTM5IDEyMS44NiAxMDguMTggMjA2LjYgMTA4LjE4IDg0LjczOCAwIDE1OS45Mi00Mi42NDUgMjA2LjYtMTA4LjE4IDIuMzk0NS0zLjMxMjUgMi4zOTQ1LTcuNzg1MiAwLTExLjA5OC00Ni42OC02NS41MzUtMTIxLjg2LTEwOC4wNC0yMDYuNi0xMDguMDR6bTAgMTguOTQxYzc1LjkxOCAwIDE0My4yIDM3LjA5OCAxODYuNzcgOTQuNzE1LTQzLjU3IDU3LjU4Mi0xMTAuODggOTQuNzE5LTE4Ni43NyA5NC43MTktNzUuODgzIDAtMTQzLjItMzcuMTM3LTE4Ni43Ny05NC43MTkgNDMuNTctNTcuNjE3IDExMC44NS05NC43MTUgMTg2Ljc3LTk0LjcxNXptMCAyOC40MTRjLTM2LjUwNCAwLTY2LjMwMSAyOS43OTctNjYuMzAxIDY2LjMwMSAwIDM2LjUwOCAyOS43OTcgNjYuMzA1IDY2LjMwMSA2Ni4zMDUgMzYuNTA4IDAgNjYuMzA1LTI5Ljc5NyA2Ni4zMDUtNjYuMzA1IDAtMzYuNTA0LTI5Ljc5Ny02Ni4zMDEtNjYuMzA1LTY2LjMwMXptMCAxOC45NDVjMjYuMjcgMCA0Ny4zNTkgMjEuMDkgNDcuMzU5IDQ3LjM1NSAwIDI2LjI3LTIxLjA5IDQ3LjM1OS00Ny4zNTkgNDcuMzU5LTI2LjI2NiAwLTQ3LjM1NS0yMS4wOS00Ny4zNTUtNDcuMzU5IDAtMjYuMjY2IDIxLjA5LTQ3LjM1NSA0Ny4zNTUtNDcuMzU1eiIvPgo8L3N2Zz4K);
 }
 
-.btn-blue {
-  background-color: #2b365a;
-  border-color: #2b365a;
+.btn-black {
+  background-color: #121212;
+  border-color: #121212;
   color: #fff;
 }
 
-.btn-blue:hover {
+.btn-black:hover {
   background-color: #fff;
-  color: #2b365a;
+  color: #121212;
 }
 
 .btn-white {
   background-color: #fff;
-  border-color: #2b365a;
-  color: #2b365a;
+  border-color: #121212;
+  color: #121212;
 }
 
 .btn-white:hover {
-  background-color: #2b365a;
+  background-color: #121212;
   color: #fff;
 }
 
 .card {
   border: 0.15rem solid transparent;
   border-radius: 0.25rem;
-  box-shadow: 0px 0px 26px -14px #242424;
+  box-shadow: 0px 0px 35px -14px #d5d5d5;
   padding: 3rem;
+  background-color: #f5f5f5;
 }

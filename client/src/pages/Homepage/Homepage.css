@@ -8,6 +8,19 @@
 } */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
 
+@media (max-width: 768px) {
+  .page-right {
+    display: none !important;
+  }
+  .page-container {
+    padding: 1rem !important;
+  }
+  .page-content-title h1  {
+    font-size: 5.5rem !important;
+  }}
+
+
+
 .page {
   overflow: hidden;
 }
@@ -27,7 +40,9 @@
 }
 
 .page-container {
-  padding: 4rem;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -35,6 +50,7 @@
   justify-content: center;
   align-items: center;
 }
+
 body {
   background-color: black;
 }

@@ -62,7 +62,7 @@ export default function Login() {
             </div>
             <form className="login-form" onSubmit={handleFormSubmit}>
               <div className="input-group">
-              <label htmlFor="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input
                   type="text"
                   id="email"
@@ -70,7 +70,7 @@ export default function Login() {
                 />
               </div>
               <div className="input-group">
-              <label htmlFor="email">Password</label>
+                <label htmlFor="email">Password</label>
                 <div className="input-wrapper">
                   <input
                     type={showPassword ? "text" : "password"}
@@ -86,7 +86,7 @@ export default function Login() {
                 </div>
               </div>
               <div className="input-group">
-                <input type="submit" className="btn-blue" value="Login" />
+                <input type="submit" className="btn-black" value="Login" />
               </div>
             </form>
           </div>
