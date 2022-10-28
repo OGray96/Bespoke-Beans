@@ -4,30 +4,39 @@
   }
 
   .navbar .navbar-menu {
-    opacity: 0;
+    /* opacity: 0;
     position: relative;
     transform: translateY(-6rem);
     transition: all 0.15s cubic-bezier(0.6, -0.28, 0.74, 0.05);
     visibility: collapse;
+    width: 100%; */
     width: 100%;
+    display: none !important;
   }
 
   .navbar .navbar-menu.open {
-    opacity: 1;
+    /* opacity: 1;
     transform: translateY(-1rem);
     visibility: visible;
-    width: 100%;
+    width: 100%; */
+    display: flex !important;
   }
 
   .navbar-menu-items {
     flex-direction: column;
     width: 100%;
-    display: none;
-    position: absolute;
+    /* display: none;
+    position: absolute; */
   }
 
   .navbar-menu-items > .navbar-menu-item {
     margin-bottom: 1rem !important;
+  }
+  .navbar .navbar-brand {
+    margin-left: 0 !important;
+  }
+  .navbar .navbar-brand img {
+    max-height: 2rem !important;
   }
 }
 
@@ -78,7 +87,7 @@
   background-color: #000;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar-menu-items .navbar-menu-item {
@@ -95,9 +104,9 @@
 }
 
 .navbar-menu-items .navbar-menu-item a.active {
-  color: #757575;
-  border-bottom: 0.15rem solid #757575;
-  border-top: 0.15rem solid #757575;
+  color:#c4adad;
+  border-bottom: 0.15rem solid #c4adad;
+  border-top: 0.15rem solid #c4adad;
 }
 
 .navbar .navbar-responsive {
