@@ -21,14 +21,10 @@ const imgArray = [coffee1, coffee2, coffee3, coffee4, coffee5, coffee6];
 
 export default function Products(props) {
   const { loading, data } = useQuery(QUERY_ALL_PRODUCTS);
-
-
-
   const items = data?.products || []
   const cart = useContext(CartContext);
   const productQuantity = cart.getProductQuantity(items.id)
-  console.log(cart.items)
-
+  console.log(productQuantity)
   return (
     <div className="products">
       {/* TESTING */}
@@ -78,7 +74,7 @@ export default function Products(props) {
                     </div>
                     <div className="products-item-cart-btn">
 
-                      <button onClick={() => cart.addOnetoCart(item._id)} className={index % 2 ? "btn-white" : "btn-black"}>Add to Cart</button>
+                      <button onClick={() => cart.addOnetoCart(item._id, item.name, item.price)} className={index % 2 ? "btn-white" : "btn-black"}>Add to Cart</button>
                     </div>
                   </div>
                 </div>

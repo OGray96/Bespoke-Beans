@@ -26,7 +26,7 @@ export function CartProvider({children}){
         return quantity
     }
 
-    function addOnetoCart(id){
+    function addOnetoCart(id, name, price){
         const quantity = getProductQuantity(id)
 
         if(quantity === 0){
@@ -35,7 +35,9 @@ export function CartProvider({children}){
                     ...cartProducts,
                     {
                         _id: id,
-                        quantity: 1
+                        quantity: 1,
+                        name: name,
+                        price: price
                     }
                 ]
             )
@@ -61,7 +63,7 @@ export function CartProvider({children}){
             setCartProducts(
                 cartProducts.map(
                     product =>
-                    product.id === id
+                    product._id === id
                     ? {...product, quantity: product.quantity - 1}
                     : product
                 )
