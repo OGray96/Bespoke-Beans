@@ -55,7 +55,7 @@ function Order() {
               <br></br>
             </div>
           ))}
-          <div className="total-coffes">
+          <div className="total-coffees">
             <h3>
               Total Coffees:{" "}
               {cart.items.reduce((accum, item) => accum + item.quantity, 0)}
