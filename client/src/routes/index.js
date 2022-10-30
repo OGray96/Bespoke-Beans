@@ -10,7 +10,8 @@ import {
 
 // import { CartProvider } from '../context';
 import { Footer, Navbar } from '../components';
-import { Homepage, Info, Login, Products, Register } from '../pages';
+import { Homepage, Info, Login, Products, Register, CartProduct } from '../pages';
+import CartProvider from '../context/CartContext';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -33,24 +34,27 @@ const client = new ApolloClient({
 
 export default function App() {
   return (
-    <ApolloProvider client={client}>
-      <BrowserRouter>
-        <header>
-          <Navbar />
-        </header>
-        <main>
-          <Routes>
-            <Route path='/' element={<Homepage />} />
-            <Route path='/info' element={<Info />} />
-            <Route path='/products' element={<Products />} />
-            <Route path='/login' element={<Login />} />
-            <Route path='/register' element={<Register />} />
-          </Routes>
-        </main>
-        <footer>
-          <Footer />
-        </footer>
-      </BrowserRouter>
-    </ApolloProvider>
+    <CartProvider>
+      <ApolloProvider client={client}>
+        <BrowserRouter>
+          <header>
+            <Navbar />
+          </header>
+          <main>
+            <Routes>
+              <Route path='/' element={<Homepage />} />
+              <Route path='/info' element={<Info />} />
+              <Route path='/products' element={<Products />} />
+              <Route path='/login' element={<Login />} />
+              <Route path='/register' element={<Register />} />
+              {/* <Route path='/order' element={<CartProduct />} /> */}
+            </Routes>
+          </main>
+          <footer>
+            <Footer />
+          </footer>
+        </BrowserRouter>
+      </ApolloProvider>
+    </CartProvider>
   );
 }

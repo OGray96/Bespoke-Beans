@@ -57,7 +57,7 @@ if(Auth.loggedIn()){
           <ul className='navbar-menu-items'>
             <motion.li className='navbar-menu-item' whileHover={{ y: -5 }}>
               <NavLink
-                to='order'
+                to='/Order'
                 className={({ isActive }) =>
                   isActive ? navbarMenuCSS.active : navbarMenuCSS.inactive
                 }
