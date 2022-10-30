@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+  .login-main {
+    margin-bottom: 2rem !important;
+  }
+}
+
 .login {
   background-color: #0a0a0a;
   padding: 3rem 0;
@@ -14,12 +20,12 @@
 }
 
 .login-main-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-main,
@@ -42,7 +48,7 @@
   color: #000000;
   font-weight: bold;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .login-main-description p {
@@ -50,7 +56,7 @@
   color: #2e4756;
   font-weight: bold;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .login-form {
@@ -83,13 +89,12 @@
   font-size: 1.25rem;
   margin: 0;
   color: #000000;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .login-register-content-description p {
   font-size: 0.75rem;
   margin: 0;
   color: #656565;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-

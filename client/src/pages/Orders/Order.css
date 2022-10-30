@@ -1,5 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
 
+@media (max-width: 768px) {
+  .cart-card {
+    padding: 8rem !important;
+    margin: 2rem;
+    justify-content: center;
+    text-align: center;
+  }
+  span {
+    font-size: 1rem !important;
+  }
+  .quantity {
+    padding: 0 2rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+  }
+  .shopping {
+    color: red !important;
+    font-weight: bold !important;
+    margin-bottom: 2rem !important;
+  }
+  .coffee-order-container > div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 #root {
   font-family: "Poppins", sans-serif;
 }
@@ -28,7 +56,6 @@ div .cart-items {
   color: red;
   font-weight: bold;
   display: flex;
-  justify-content: flex-end;
   margin-bottom: 2rem;
 }
 
