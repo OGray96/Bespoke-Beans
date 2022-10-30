@@ -10,7 +10,7 @@ import {
 
 // import { CartProvider } from '../context';
 import { Footer, Navbar } from '../components';
-import { Homepage, Info, Login, Products, Register, CartProduct } from '../pages';
+import { Homepage, Info, Login, Products, Register, Order } from '../pages';
 import CartProvider from '../context/CartContext';
 
 const httpLink = createHttpLink({
@@ -47,7 +47,7 @@ export default function App() {
               <Route path='/products' element={<Products />} />
               <Route path='/login' element={<Login />} />
               <Route path='/register' element={<Register />} />
-              {/* <Route path='/order' element={<CartProduct />} /> */}
+              <Route path='/order' element={<Order />} />
             </Routes>
           </main>
           <footer>
