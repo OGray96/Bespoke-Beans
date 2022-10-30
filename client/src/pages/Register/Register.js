@@ -99,7 +99,7 @@ export default function Register() {
               </div>
             </div>
             <div className="input-group">
-              <input type="submit" className="btn-blue" value="Register" />
+              <input type="submit" className="btn-black" value="Register" />
             </div>
           </form>
         </div>

@@ -4,7 +4,7 @@ import { useMutation } from "@apollo/client";
 
 import { Auth, LOGIN } from "../../utils";
 import "./Login.css";
-import registerImagePlaceholder from "../../images/phone.webp";
+import signupPhoto from "../../images/phone.png";
 
 export default function Login() {
   // State to track password visibility
@@ -62,7 +62,7 @@ export default function Login() {
             </div>
             <form className="login-form" onSubmit={handleFormSubmit}>
               <div className="input-group">
-              <label htmlFor="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input
                   type="text"
                   id="email"
@@ -70,7 +70,7 @@ export default function Login() {
                 />
               </div>
               <div className="input-group">
-              <label htmlFor="email">Password</label>
+                <label htmlFor="email">Password</label>
                 <div className="input-wrapper">
                   <input
                     type={showPassword ? "text" : "password"}
@@ -86,7 +86,7 @@ export default function Login() {
                 </div>
               </div>
               <div className="input-group">
-                <input type="submit" className="btn-blue" value="Login" />
+                <input type="submit" className="btn-black" value="Login" />
               </div>
             </form>
           </div>
@@ -95,7 +95,7 @@ export default function Login() {
         <div className="login-register">
           <div className="login-register-content card">
             <div className="login-register-content-image">
-              <img src={registerImagePlaceholder} alt="" />
+              <img src={signupPhoto} alt="" />
             </div>
             <div className="login-register-content-title">
               <h2>Don't Have an Account?</h2>

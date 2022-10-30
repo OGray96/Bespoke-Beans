@@ -1,53 +1,80 @@
-.image-wrapper-top {
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+
+@media (max-width: 768px) {
+.info {
+  padding: 1rem !important;
+}
+  .info-location {
+    padding: 0rem !important;
+  }
+  .info-header {
+    padding: 0 2rem !important;
+
+  }
+  .info-location-content h1,
+  .info-header-content h1  {
+    font-size: 1.25rem !important;
+  }
+  .info-location-content span,
+  .info-header-content span {
+    font-size: 1.25rem !important;
+  }
+  .info-location-image-wrapper {
+    padding: 0rem !important;
+    margin-top: 2rem !important;
+  }
+  .info-location-image-wrapper img {
+    height: 9rem !important;
+  }
+}
+
+
+.info > div {
+  margin-bottom: 2rem;
+}
+
+.info-header,
+.info-header-content,
+.info-location {
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
-  flex-direction: row;
   align-items: center;
-  margin-top: 5rem;
+}
+.info-location-content,
+.info-header-content {
+  color: #fafafa;
+  max-width: 60rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.info-location-content h1,
+.info-header-content h1 {
+  font-size: 2rem;
+  margin-bottom: 0.15rem;
+}
+.info-location-content span,
+.info-header-content span {
+  font-size: 2rem;
+  color:#d5d5d5;
+  display: block;
 }
 
-.image-wrapper-top img {
-  width: 1000px;
-  border-radius: .5rem;
-  box-shadow: -1px 0px 6px 0px #ab9ec9;
-}
-
-
-.image-wrapper-bottom img {
-  width: 1000px;
-}
-
-.image-wrapper-bottom {
+.info-location-image-wrapper {
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
-  flex-direction: row;
   align-items: center;
-  margin-top: 5rem;
+  padding-top: 1rem;
 }
 
-.info-text p {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 18px;
-  font-weight: 100;
-  text-shadow: 0px 0px 8px rgb(230 223 223);
+.info-location-image-wrapper img {
+  width: auto;
+  height: 20rem;
 }
 
-.find-us p {
-  position: absolute;
-  top: 120%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 18px;
-  font-weight: 100;
-  text-shadow: 0px 0px 8px rgb(230 223 223);
-
-}
-
-.img {
-  border-radius: 2rem;
-}

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import "./Products.css";
 
-import {QUERY_ALL_PRODUCTS} from '../../utils/queries'
+import { QUERY_ALL_PRODUCTS } from "../../utils/queries";
 import { useQuery } from "@apollo/client";
 import { CartContext } from "../../context/CartContext";
 
@@ -16,10 +16,12 @@ import coffee4 from "../../images/coffee4.png";
 import coffee5 from "../../images/coffee5.png";
 import coffee6 from "../../images/coffee6.png";
 
-const imgArray = [coffee1,coffee2,coffee3,coffee4,coffee5,coffee6]
+const imgArray = [coffee1, coffee2, coffee3, coffee4, coffee5, coffee6];
 
 
 export default function Products(props) {
+  const { loading, data } = useQuery(QUERY_ALL_PRODUCTS);
+
 
   const { loading, data} = useQuery(QUERY_ALL_PRODUCTS);
 
@@ -27,7 +29,6 @@ export default function Products(props) {
   const cart = useContext(CartContext);
   const productQuantity = cart.getProductQuantity(items.id)
   console.log(cart.items)
-
 
   return (
     <div className="products">
@@ -78,13 +79,7 @@ export default function Products(props) {
                     </div>
                     <div className="products-item-cart-btn">
 
-                      <button 
-                      onClick={() => cart.addOnetoCart(item._id)}
-                    >
-                      Add to Cart
-                    </button>
-                    
-
+                      <button onClick={() => cart.addOnetoCart(item._id)} className={index % 2 ? "btn-white" : "btn-black"}>Add to Cart</button>
                     </div>
                   </div>
                 </div>
@@ -110,7 +105,6 @@ export default function Products(props) {
                     }}
                     src={imgArray[index]}
                     alt="product-placeholder.png"
-                    width="576px"
                   />
                 </div>
               </div>
