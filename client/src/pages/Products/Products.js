@@ -23,7 +23,6 @@ export default function Products(props) {
   const { loading, data } = useQuery(QUERY_ALL_PRODUCTS);
 
 
-  const { loading, data} = useQuery(QUERY_ALL_PRODUCTS);
 
   const items = data?.products || []
   const cart = useContext(CartContext);
