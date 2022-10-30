@@ -8,7 +8,7 @@ export default function Footer() {
         <div className='footer-menu'>
           <ul className='footer-menu-items'>
             <li className='footer-menu-item'>
-              <a href='https://github.com/Zoki91'>
+              <a href='https://github.com/OGray96/Bespoke-Beans'>
                 <svg viewBox='0 0 16 16' version='1.1'>
                   <path
                     fillRule='evenodd'
