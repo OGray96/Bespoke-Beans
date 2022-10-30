@@ -1,11 +1,37 @@
-h3{
-    color: white;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+
+#root {
+  font-family: "Poppins", sans-serif;
 }
 
-h2{
-    color: white;
+span {
+  font-family: "Poppins", sans-serif;
+  margin-right: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
-span{
-    color: white;
+h3 {
+  margin: 0px;
+}
+
+div .cart-items {
+  margin-bottom: 20px;
+}
+
+.cart-items h3 {
+  font-size: 1.5rem;
+  margin-top: 0.9rem;
+}
+
+.shopping {
+  color: red;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.price h3 {
+  font-size: 1.1rem;
 }
