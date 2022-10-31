@@ -1,17 +1,33 @@
 import { CartContext } from "../../context/CartContext";
-import React, { useContext, useEffect } from "react";
-import { QUERY_ALL_PRODUCTS } from "../../utils/queries";
+import React, { useContext } from "react";
+import { QUERY_ALL_PRODUCTS} from "../../utils/queries";
 import { useQuery } from "@apollo/client";
 import "./Order.css";
 import Auth from "../../utils/auth";
+
 
 function Order() {
   const cart = useContext(CartContext);
   const { loading, data } = useQuery(QUERY_ALL_PRODUCTS);
   const items = data?.products || [];
-  const productQuantity = cart.getProductQuantity(items.id);
-  console.log(cart.items);
-  console.log(productQuantity);
+  console.log(cart)
+
+  const checkout = async () => {
+    await fetch('http://localhost:3001/checkout', {
+        method: "POST",
+        headers: {
+            'Content-Type' : 'application/json'
+        },
+        body: JSON.stringify({items:cart.items})
+    }).then((response) => {
+        return response.json();
+    }).then((response) => {
+        if(response.url){
+            window.location.assign(response.url)
+        }
+    })
+  }
+ 
   if(Auth.loggedIn()){
     if (loading) {
         return (
@@ -78,7 +94,7 @@ function Order() {
                 </h3>
               </div>
               <div className="checkout-btn">
-                <button className="cart-btn">Checkout</button>
+                <button className="cart-btn" onClick={checkout}>Checkout</button>
               </div>
             </div>
           </>

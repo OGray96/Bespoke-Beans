@@ -26,7 +26,7 @@ export function CartProvider({children}){
         return quantity
     }
 
-    function addOnetoCart(id, name, price){
+    function addOnetoCart(id, name, price, stripeKey){
         const quantity = getProductQuantity(id)
 
         if(quantity === 0){
@@ -37,7 +37,8 @@ export function CartProvider({children}){
                         _id: id,
                         quantity: 1,
                         name: name,
-                        price: price
+                        price: price,
+                        stripe: stripeKey
                     }
                 ]
             )

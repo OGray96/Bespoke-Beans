@@ -26,7 +26,7 @@ export default function Products(props) {
   const items = data?.products || []
   const cart = useContext(CartContext);
   const productQuantity = cart.getProductQuantity(items.id)
-  console.log(productQuantity)
+  console.log(items)
   if (Auth.loggedIn()) {
     return (
       <div className="products">
@@ -77,7 +77,7 @@ export default function Products(props) {
                       </div>
                       <div className="products-item-cart-btn">
   
-                        <button onClick={() => cart.addOnetoCart(item._id, item.name, item.price)} className={index % 2 ? "btn-white" : "btn-black"}>Add to Cart</button>
+                        <button onClick={() => cart.addOnetoCart(item._id, item.name, item.price, item.stripeKey)} className={index % 2 ? "btn-white" : "btn-black"}>Add to Cart</button>
                       </div>
                     </div>
                   </div>

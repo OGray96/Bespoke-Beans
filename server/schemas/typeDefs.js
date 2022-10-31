@@ -16,6 +16,7 @@ type Product {
     description: String
     price: Float
     stock: Int
+    stripeKey: String
 }
 
 type Order {

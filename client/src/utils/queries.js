@@ -32,6 +32,7 @@ query products {
     name
     description
     price
+    stripeKey
   }
 }
 `;

@@ -17,6 +17,9 @@ const productSchema = new Schema({
     stock: {
         type: Number,
         required: true
+    },
+    stripeKey: {
+        type: String
     }
  
 });
