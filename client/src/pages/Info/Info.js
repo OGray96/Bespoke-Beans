@@ -4,6 +4,7 @@ import "./Info.css";
 import mapImage from "../../images/map-image.png";
 
 export default function Info() {
+  document.title = "Contact Us";
   return (
     <div className="info">
       <div className="info-header">

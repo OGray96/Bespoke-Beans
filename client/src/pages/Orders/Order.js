@@ -6,6 +6,7 @@ import "./Order.css";
 import Auth from "../../utils/auth";
 
 function Order() {
+  document.title = "My Cart";
   const cart = useContext(CartContext);
   const { loading, data } = useQuery(QUERY_ALL_PRODUCTS);
   const items = data?.products || [];
@@ -61,7 +62,7 @@ function Order() {
                     {/* <h3 className="coffee-price">Price per Coffee : $</h3> */}
                     {/* <span className="coffee-price"> {item.price * item.quantity}</span> */}
                     <h3>🧾${item.price * item.quantity}</h3>
-                    <button className="cart-btn" onClick={() => cart.deleteFromCart(item._id)}>Remove</button>
+                    {/* <button className="cart-btn" onClick={() => cart.deleteFromCart(item._id)}>Remove</button> */}
                   </div>
     
                   <br></br>
