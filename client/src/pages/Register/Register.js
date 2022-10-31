@@ -6,6 +6,7 @@ import { Auth, ADD_USER } from "../../utils";
 import "./Register.css";
 
 export default function Register() {
+  document.title = "Register Now";
   // State to track password visibility
   let [showPassword, setShowPassword] = useState(false);
 

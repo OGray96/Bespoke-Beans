@@ -7,6 +7,7 @@ import "./Login.css";
 import signupPhoto from "../../images/phone.png";
 
 export default function Login() {
+  document.title = "Login/Signup";
   // State to track password visibility
   let [showPassword, setShowPassword] = useState(false);
 
