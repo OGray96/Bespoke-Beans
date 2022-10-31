@@ -6,6 +6,7 @@ import "./Order.css";
 import Auth from "../../utils/auth";
 
 function Order() {
+  document.title = "My Cart";
   const cart = useContext(CartContext);
   const { loading, data } = useQuery(QUERY_ALL_PRODUCTS);
   const items = data?.products || [];

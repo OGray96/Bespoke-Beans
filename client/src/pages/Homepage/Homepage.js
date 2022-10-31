@@ -5,6 +5,7 @@ import "./Homepage.css";
 import mainImage from "../../images/mockup-of-multiple-paper-cups-placed-circularly-on-a-surface-m29048-r-el2 (1)-PhotoRoom (1).png";
 
 export default function Homepage() {
+  document.title = "Bespoke Beans";
   return (
     <div className="page">
       <div className="page-container">

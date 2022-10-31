@@ -22,6 +22,7 @@ const imgArray = [coffee1, coffee2, coffee3, coffee4, coffee5, coffee6];
 
 
 export default function Products(props) {
+  document.title = "Our Coffee";
   const { loading, data } = useQuery(QUERY_ALL_PRODUCTS);
   const items = data?.products || []
   const cart = useContext(CartContext);
