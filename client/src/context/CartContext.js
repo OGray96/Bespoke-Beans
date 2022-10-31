@@ -75,7 +75,7 @@ export function CartProvider({children}){
         setCartProducts(
             cartProducts =>
             cartProducts.filter(currentProduct => {
-                return currentProduct.id != id;
+                return currentProduct._id != id;
             })
         )
     }

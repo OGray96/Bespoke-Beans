@@ -18,6 +18,16 @@ function Order() {
         <h3>LOADING...</h3>
       </>
     );
+  } else if ((cart.items.reduce((accum, item) => accum + item.quantity, 0)) < 1){
+    return (
+        <div>
+            <div className="empty-cart">
+                <h3 className="empty-cart-text">Looks like you cart is empty!</h3>
+            </div>
+        </div>
+
+        
+    )
   } else {
     return (
       <>
@@ -50,6 +60,7 @@ function Order() {
                 {/* <h3 className="coffee-price">Price per Coffee : $</h3> */}
                 {/* <span className="coffee-price"> {item.price * item.quantity}</span> */}
                 <h3>🧾${item.price * item.quantity}</h3>
+                <button className="cart-btn" onClick={() => cart.deleteFromCart(item._id)}>Remove</button>
               </div>
 
               <br></br>

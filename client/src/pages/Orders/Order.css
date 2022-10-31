@@ -62,3 +62,15 @@ div .cart-items {
 .price h3 {
   font-size: 1.1rem;
 }
+
+.empty-cart {
+  background-color: white;
+  width: 80%;
+  border-radius: 5px;
+  margin-left:10%;
+}
+
+.empty-cart-text{
+  text-align: center;
+  top: 50%;
+}
