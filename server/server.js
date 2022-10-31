@@ -47,8 +47,8 @@ app.post("/checkout", async (req,res) => {
   const session = await stripe.checkout.sessions.create({
     line_items: lineItems,
     mode: 'payment',
-    success_url: "http://localhost:3000/",
-    cancel_url: "http://localhost:3000/products"
+    success_url: "https://frozen-mesa-21808.herokuapp.com",
+    cancel_url: "https://frozen-mesa-21808.herokuapp.com/products"
   })
 
   res.send(JSON.stringify({
