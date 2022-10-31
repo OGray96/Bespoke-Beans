@@ -13,7 +13,7 @@ function Order() {
   console.log(cart)
 
   const checkout = async () => {
-    await fetch('http://localhost:3001/checkout', {
+    await fetch('/checkout', {
         method: "POST",
         headers: {
             'Content-Type' : 'application/json'
