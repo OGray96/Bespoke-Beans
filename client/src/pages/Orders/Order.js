@@ -13,7 +13,7 @@ function Order() {
   console.log(cart)
 
   const checkout = async () => {
-    await fetch('/checkout', {
+    await fetch('https://frozen-mesa-21808.herokuapp.com/checkout', {
         method: "POST",
         headers: {
             'Content-Type' : 'application/json'
