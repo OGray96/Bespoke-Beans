@@ -91,6 +91,7 @@ export default function Register() {
                   id="password"
                   placeholder="Please use 8 characters"
                   onInput={(e) => updateForm(e.target)}
+                  minlength="8"
                 />
                 <span
                   className={showPassword ? "icon-eye-open" : "icon-eye-closed"}
