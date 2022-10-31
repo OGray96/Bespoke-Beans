@@ -115,23 +115,7 @@ export default function Products(props) {
     );
   } else {
     return (
-      <div className="products">
-        {/* TESTING */}
-        {/* <div
-          style={{
-            position: 'fixed',
-            right: '3rem',
-            display: 'flex',
-            flexDirection: 'column',
-          }}
-        >
-          <button onClick={() => console.log(cart.items)}>Show Cart</button>
-          <button onClick={() => console.log(cart.getTotal())}>Cart Total</button>
-          <button onClick={() => cart.removeAll(1)}>Remove All</button>
-          <button onClick={() => cart.removeOne(1)}>Remove One</button>
-        </div> */}
-        {/* TESTING */}
-  
+      <div className="products"> 
         <div className="products-container">
           <div className="products-header">
             <div className="products-header-content">

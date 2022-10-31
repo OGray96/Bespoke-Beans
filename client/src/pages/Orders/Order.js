@@ -59,10 +59,7 @@ function Order() {
                     </button>
                   </div>
                   <div className="price">
-                    {/* <h3 className="coffee-price">Price per Coffee : $</h3> */}
-                    {/* <span className="coffee-price"> {item.price * item.quantity}</span> */}
                     <h3>🧾${item.price * item.quantity}</h3>
-                    {/* <button className="cart-btn" onClick={() => cart.deleteFromCart(item._id)}>Remove</button> */}
                   </div>
     
                   <br></br>
